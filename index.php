@@ -1,8 +1,10 @@
-<?php include "templates/header.php"; ?>
+<?php
 
-<ul>
-	<li><a href="create.php"><strong>Create</strong></a> - add a user</li>
-	<li><a href="read.php"><strong>Read</strong></a> - find a user</li>
-</ul>
+// Comment these lines to hide errors
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-<?php include "templates/footer.php"; ?>
+require 'includes/config.php';
+require 'includes/functions.php';
+
+init();
